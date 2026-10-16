@@ -6,15 +6,19 @@ Exercice HTML/CSS réalisé dans le cadre de ma formation de développeur IA.
 
 - Structurer une page avec un en-tête, une navigation et des articles.
 - Utiliser une feuille de style CSS.
+- Placer les éléments avec `float` et contenir les flottants avec `clear`.
+- Adapter la page aux petits écrans avec des media queries.
 - Intégrer des images et des icônes.
 
 ## Voir la page
 
-Ouvrir `index.html` dans un navigateur. Les icônes Font Awesome sont chargées depuis un service externe et nécessitent une connexion Internet.
+Ouvrir `index.html` dans un navigateur. La police Oswald et les icônes Font Awesome sont chargées depuis des services externes et nécessitent une connexion Internet.
 
 ## Avancement
 
-Exercice en cours : la mise en page reste à compléter. Les liens de navigation et les boutons « Read more » sont des éléments de maquette.
+Mise en page réalisée selon l'énoncé et la maquette : largeur maximale de 750 px, en-tête vert, contenu blanc, placement avec float, police Oswald et boutons alignés à droite. La page est aussi adaptée aux petits écrans.
+
+Les liens de navigation et les boutons « Read more » sont des éléments de maquette et ne renvoient pas à des pages supplémentaires.
 
 ## Ressources
 

@@ -1,12 +1,26 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("../img/fond.png");
+/* Le padding reste compris dans la largeur maximale de 750 px. */
+* {
+    box-sizing: border-box;
 }
 
-.navbar {
+body {
+    margin: 0;
+    background: #e8e5dc url("../img/fond.png") repeat;
+    color: #666;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+header,
+main {
     max-width: 750px;
     margin: 0 auto;
+    padding: 25px;
+}
+
+/* En-tête : logo à gauche et navigation à droite avec float. */
+header {
     background-color: #b8cb21;
 }
 
@@ -14,20 +28,126 @@ body {
     float: left;
 }
 
-.nav-links {
+.logo img {
+    display: block;
+    width: 176px;
+    height: 123px;
+}
+
+nav {
     float: right;
-    list-style: none;
-    padding: 0;
+    margin-top: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
 }
 
-.nav-links li {
+nav a {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 40px;
+    color: #2c472b;
 }
 
-.navbar {
-    max-width: 750px;
-    margin: 0 auto;
+nav a:hover {
+    color: #172a16;
+}
+
+/* Contenu blanc, titres verts et texte autour des images flottantes. */
+main {
+    background-color: #fff;
+}
+
+article + article {
+    margin-top: 25px;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #a9bf20;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+h2 i {
+    margin-right: 4px;
+}
+
+article img {
+    float: left;
+    width: 200px;
+    max-width: 45%;
+    height: auto;
+    margin: 0 10px 5px 0;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+ul {
+    margin: 0 0 15px;
+    padding-left: 30px;
+}
+
+.read-more {
+    float: right;
+    padding: 10px;
     background-color: #b8cb21;
-    display: flow-root;
+    color: #fff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #66750c;
+}
+
+a:focus-visible {
+    outline: 2px solid #2c472b;
+    outline-offset: 4px;
+}
+
+/* Le clear empêche les éléments flottants de sortir de leur conteneur. */
+header::after,
+article::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* Sur un petit écran, la navigation passe sous le logo. */
+@media (max-width: 600px) {
+    header,
+    main {
+        padding: 20px;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        width: 176px;
+        margin: 0 auto;
+    }
+
+    nav {
+        float: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    article img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 15px;
+    }
 }
