@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/fond.png");
+}
+
+.navbar {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #b8cb21;
+}
+
+.logo {
+    float: left;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.navbar {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #b8cb21;
+    display: flow-root;
+}
