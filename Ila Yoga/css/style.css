@@ -1,0 +1,35 @@
+body {
+
+    margin: 0;
+
+}
+
+header {
+
+    background-image: url(IMG/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0 300px;
+}
+
+nav {
+
+    text-align: center;
+
+
+}
+
+nav a {
+
+    text-decoration: none;
+    padding: 0 20px;
+
+}
+
+p{
+
+    background-color: rgba(199, 171, 229, 0.4);
+    padding: 2px;
+
+}
