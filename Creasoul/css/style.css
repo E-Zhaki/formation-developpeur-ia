@@ -1,0 +1,55 @@
+body {
+    background-color: #f2f1f4;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2eaa9a;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 25px 0;
+}
+
+.bienvenue img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+}
+
+.bienvenue {
+    width: 70%;
+    padding-right: 20px;
+}
+
+
+.rubrique {
+    width: 30%;
+    background-color: #b8dcb1;
+    padding: 20px;
+}
+
+h1, h2, nav {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+}
+
+
