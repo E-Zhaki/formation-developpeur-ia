@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Candal"
+}
+
+main {
+    margin: 0 auto;
+}
+
+.prix {
+    color: #fb8b9b;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
