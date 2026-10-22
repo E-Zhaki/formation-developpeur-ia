@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Contact</title>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="img/logo.png" alt="Logo Mindgeek"></a>
-            <nav>
-                <a href="mutualise.html">Serveur Mutualisé</a>
-                <a href="dedie.html">Serveur Dédié</a>
-                <a href="cloud.html">Solution "Cloud"</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-                 <div class="recherche">
-                <p>Que recherchez-vous ?</p>
-            </div>
-            <section class="banniere">
-                <h1>Contactez-nous</h1>
-            </section>
-        </header>
-        <main>
-            <a href="mailto:mindgeek@mindgeek.fr">mindgeek@mindgeek.fr</a>
-            <a href="tel:+33101010101">+33 1 01 01 01 01</a>
-            <address>MindGeek 46 rue mindGeek 75000 Paris</address>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15063.723073730564!2d2.404645010729282!3d48.86712424570087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d6fcb478cb7%3A0x40b82c3688b3c70!2s93170%20Bagnolet!5e1!3m2!1sfr!2sfr!4v1792589425943!5m2!1sfr!2sfr" title="Localisation de Mindgeek" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </main>
-        <footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact - Mindgeek</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="Mindgeek, accueil">
+            </a>
+            <a href="mutualise.html"><i class="fa-solid fa-users" aria-hidden="true"></i> Serveur mutualisé</a>
+            <a href="dedie.html"><i class="fa-solid fa-user" aria-hidden="true"></i> Serveur dédié</a>
+            <a href="cloud.html"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Solution &quot;Cloud&quot;</a>
+            <a href="contact.html" class="active" aria-current="page"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <input type="search" name="recherche" aria-label="Rechercher sur le site" placeholder="Que recherchez-vous ?">
+
+        <section class="solution" aria-labelledby="titre-contact">
+            <h2 id="titre-contact">Contactez-nous</h2>
+            <div class="offre">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <p>Mail : <a href="mailto:mindgeek@mindgeek.fr">mindgeek@mindgeek.fr</a></p>
+            </div>
+            <div class="offre">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <p>Tél. : <a href="tel:+33101010101">+33 1 01 01 01 01</a></p>
+            </div>
+            <div class="offre">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <address>
+                    MindGeek<br>
+                    46, rue mindGeek<br>
+                    75000 Paris
+                </address>
+            </div>
+        </section>
+
+        <iframe
+            src="https://www.google.com/maps?q=Franklin%20D.%20Roosevelt%2C%20Paris%2C%20France&amp;z=15&amp;output=embed"
+            title="Carte du quartier Franklin D. Roosevelt à Paris"
+            width="600"
+            height="450"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </main>
+
+    <footer>
+        <nav aria-label="Navigation de pied de page">
             <a href="index.html">Accueil</a>
-            <a href="mutualise.html">Serveur Mutualisé</a>
-            <a href="dedie.html">Serveur Dédié</a>
-            <a href="cloud.html">Solution "Cloud"</a>
+            <a href="mutualise.html">Serveur mutualisé</a>
+            <a href="dedie.html">Serveur dédié</a>
+            <a href="cloud.html">Solution &quot;Cloud&quot;</a>
             <a href="contact.html">Contact</a>
             <a href="#">Se connecter</a>
-        </footer>
-    </body>
+        </nav>
+    </footer>
+</body>
+
 </html>

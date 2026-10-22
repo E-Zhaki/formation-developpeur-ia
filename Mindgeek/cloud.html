@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Cloud</title>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="img/logo.png" alt="Logo Mindgeek"></a>
-            <nav>
-                <a href="mutualise.html">Serveur Mutualisé</a>
-                <a href="dedie.html">Serveur Dédié</a>
-                <a href="cloud.html">Solution "Cloud"</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-                 <div class="recherche">
-                <p>Que recherchez-vous ?</p>
-            </div>
-            <section class="banniere">
-                <h1>Le cloud</h1>
-                <p>Des solutions d’hébergement adaptées à vos projets web.Des solutions d’hébergement adaptées à vos projets web.Des solutions d’hébergement adaptées à vos projets web.
-                </p>
-            </section>
-        </header>
-        <main>
-            <section class="solutions">
-                <div class="points">
-                    <article>
-                        <h3>Cloud STARTER</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li> 
-                        </ul>
-                        <p>299,99€ HT/Mois</p>
-                        <a href="#">Commander</a>
-                    </article>
-                    <article>
-                        <h3>Cloud EVASION</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li> 
-                        </ul>
-                        <p>489,99€ HT/Mois</p>
-                        <a href="#">Commander</a>
-                    </article>
-                    <article>
-                        <h3>Cloud LIBERTY</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li>
-                            <li>Lorem ipsum dolor sit
-                            </li> 
-                        </ul>
-                        <p>581,99€ HT/Mois</p>
-                        <a href="#">Commander</a>
-                    </article>
-                </div>
-            </section>
 
-        </main>
-        <footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cloud - Mindgeek</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="Mindgeek, accueil">
+            </a>
+            <a href="mutualise.html"><i class="fa-solid fa-users" aria-hidden="true"></i> Serveur mutualisé</a>
+            <a href="dedie.html"><i class="fa-solid fa-user" aria-hidden="true"></i> Serveur dédié</a>
+            <a href="cloud.html" class="active" aria-current="page"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Solution &quot;Cloud&quot;</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <input type="search" name="recherche" aria-label="Rechercher sur le site" placeholder="Que recherchez-vous ?">
+
+        <section class="solution" aria-labelledby="titre-cloud">
+            <h2 id="titre-cloud">Le cloud</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium unde ratione incidunt, est
+                praesentium quibusdam beatae quam blanditiis repudiandae. Atque aspernatur, nesciunt, sit necessitatibus
+                officiis debitis vitae temporibus exercitationem totam unde ab cumque. Mollitia dolores, omnis eaque
+                explicabo dolor perferendis quae voluptatibus architecto nostrum in accusantium sed necessitatibus est.
+            </p>
+        </section>
+        <section class="solution formule" aria-label="Offres de serveurs cloud">
+            <article class="offre">
+                <h3>Cloud STARTER</h3>
+                <ul>
+                    <li>Intel E5-1650v2</li>
+                    <li>E5-1650v2 - 6c/12t</li>
+                    <li>3,5 / 3,9 GHz - 128 Go RAM</li>
+                    <li>DDR3 ECC 1600 MHz</li>
+                    <li>2 × 480 Go SSD RAID SOFT</li>
+                </ul>
+                <strong>299,99 € HT / mois</strong>
+                <a href="#">Commander</a>
+            </article>
+            <article class="offre">
+                <h3>Cloud EVASION</h3>
+                <ul>
+                    <li>Intel Xeon E5</li>
+                    <li>E5-2620v3 - 6c/12t</li>
+                    <li>2,4 / 3,2 GHz - 64 Go RAM</li>
+                    <li>DDR4 ECC 1866 MHz</li>
+                    <li>12 × 4 To SAS RAID SOFT</li>
+                    <li>vRack 10 Gbps</li>
+                </ul>
+                <strong>489,99 € HT / mois</strong>
+                <a href="#">Commander</a>
+            </article>
+            <article class="offre">
+                <h3>Cloud LIBERTY</h3>
+                <ul>
+                    <li>Intel Xeon E5</li>
+                    <li>2 × E5-2690v3 - 24c/48t</li>
+                    <li>2,6 / 3,4 GHz - 128 Go RAM</li>
+                    <li>DDR4 ECC 2133 MHz</li>
+                    <li>2 × 4 To SAS RAID SOFT</li>
+                    <li>vRack 10 Gbps</li>
+                </ul>
+                <strong>581,99 € HT / mois</strong>
+                <a href="#">Commander</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Navigation de pied de page">
             <a href="index.html">Accueil</a>
-            <a href="mutualise.html">Serveur Mutualisé</a>
-            <a href="dedie.html">Serveur Dédié</a>
-            <a href="cloud.html">Solution "Cloud"</a>
+            <a href="mutualise.html">Serveur mutualisé</a>
+            <a href="dedie.html">Serveur dédié</a>
+            <a href="cloud.html">Solution &quot;Cloud&quot;</a>
             <a href="contact.html">Contact</a>
             <a href="#">Se connecter</a>
-        </footer>
-    </body>
+        </nav>
+    </footer>
+</body>
+
 </html>
