@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Accueil</title>
-    </head>
-    <body>
-        <header>
-            <div class="entete">
-            <a href="index.html"><img src="img/logo.png" alt="Logo Mindgeek"></a>
-            <nav>
-                <a href="mutualise.html">Serveur Mutualisé</a>
-                <a href="dedie.html">Serveur Dédié</a>
-                <a href="cloud.html">Solution "Cloud"</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            </div>
-            <section class="banniere">
-                <h1>L’hébergement à prix libre</h1>
-                <p>Des solutions d’hébergement adaptées à vos projets web.
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Accueil - Mindgeek</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="index.html" aria-current="page">
+                <img src="./img/logo.png" alt="Mindgeek, accueil">
+            </a>
+            <a href="mutualise.html"><i class="fa-solid fa-users" aria-hidden="true"></i> Serveur mutualisé</a>
+            <a href="dedie.html"><i class="fa-solid fa-user" aria-hidden="true"></i> Serveur dédié</a>
+            <a href="cloud.html"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Solution "Cloud"</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="prix_hebergement">
+            <h1>L'hébergement à prix libre</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, itaque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, itaque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, itaque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, itaque.
             </p>
-            </section>
-        </header>
-            <div class="recherche">
-                <p>Que recherchez-vous ?</p>
-            </div>
-        <main>
-            <section class="solutions">
-                <h2>Notre solution en 3 points</h2>
-                <div class="points">
-                    <article>
-                        <h3>Configuration</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                    </article>
-                    <article>
-                        <h3>Monitoring</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                    </article>
-                    <article>
-                        <h3>Sauvegarde</h3>
-                        <p>Un hébergement configuré selon vos besoins.</p>
-                    </article>
-                </div>
-            </section>
-            <section class="hebergements">
-                <h2>Choisissez votre style d'hébergement</h2>
-                <div class="offres">
-                    <article>
-                        <h3>Serveur Mutualisé</h3>
-                        <p class="prix">19 € / mois</p>
-                        <p>Une solution partagée pour héberger votre site.</p>
-                    </article>
-                    <article>
-                        <h3>Serveur Dédié</h3>
-                        <p class="prix">39 € / mois</p>
-                        <p>Une solution partagée pour héberger votre site.</p>
-                    </article>
-                    <article>
-                        <h3>Service Cloud</h3>
-                        <p class="prix">49 € / mois</p>
-                        <p>Une solution partagée pour héberger votre site.</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <footer>
+        </section>
+        <input type="search" name="recherche" aria-label="Rechercher sur le site" placeholder="Que recherchez-vous ?">
+
+        <section class="solution">
+            <h2>Notre solution en 3 points</h2>
+            <article class="offre">
+                <i class="fa-solid fa-cogs" aria-hidden="true"></i>
+                <h3>Configuration</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+            <article class="offre">
+                <i class="fa-solid fa-chart-area" aria-hidden="true"></i>
+                <h3>Monitoring</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+            <article class="offre">
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                <h3>Sauvegarde</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+        </section>
+        <section class="solution">
+            <h2>Choisissez votre style d'hébergement</h2>
+            <article class="offre">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                <h3>Serveur mutualisé</h3>
+                <p class="prix">19 € / mois</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+            <article class="offre">
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                <h3>Serveur dédié</h3>
+                <p class="prix">39 € / mois</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+            <article class="offre">
+                <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                <h3>Solution "Cloud"</h3>
+                <p class="prix">49 € / mois</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis corrupti sit reprehenderit
+                    consequatur enim sunt molestiae laudantium dicta. Consectetur?
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Navigation de pied de page">
             <a href="index.html">Accueil</a>
-            <a href="mutualise.html">Serveur Mutualisé</a>
-            <a href="dedie.html">Serveur Dédié</a>
+            <a href="mutualise.html">Serveur mutualisé</a>
+            <a href="dedie.html">Serveur dédié</a>
             <a href="cloud.html">Solution "Cloud"</a>
             <a href="contact.html">Contact</a>
             <a href="#">Se connecter</a>
-        </footer>
-    </body>
+        </nav>
+    </footer>
+
+</body>
+
 </html>
