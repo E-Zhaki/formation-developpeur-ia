@@ -1,0 +1,8 @@
+# Documents administratifs et personnels
+/Docs/
+
+# Fichiers temporaires du système et des logiciels bureautiques
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
