@@ -28,6 +28,10 @@ nav a {
     color: aliceblue;
 }
 
+img {
+    max-width: 100%;
+}
+
 nav a:hover {
 
     color: grey;
@@ -112,6 +116,7 @@ h2 {
 
     width: 150px;
 
+
 }
 
 iframe {
@@ -131,3 +136,31 @@ footer {
 
     color: rgb(151, 149, 149);
 }
+
+
+@media (max-width: 768px) {
+
+    iframe {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .offre {
+            display: flex;
+        }
+
+        .presentation {
+        flex-direction: column;
+    }
+    }
+
+    @media (max-width: 1024px) {
+
+        iframe {
+            display: none;
+        }
+    }

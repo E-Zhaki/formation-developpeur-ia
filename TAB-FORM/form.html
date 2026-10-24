@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+
+<body>
+
+    <form action="">
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            </div>
+
+            <div>
+                <label for="">Nom</label>
+                <input type="text" name="nom" minlength="2" maxlength="5">
+            </div>
+        </div>
+
+        <label for="">Mot de passe</label>
+        <input type="password">
+
+        <label for="">E-mail</label>
+        <input type="email">
+
+        <br><br>
+        <input type="checkbox" value="php" id="php" name="langages[]">
+        <label for="php">PHP</label>
+        <label>
+            <input type="checkbox" value="css" name="langages[]">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" value="html" name="langages[]">
+            HTML
+        </label>
+
+        <br><br>
+        <fieldset>
+            <legend>Ville</legend>
+            <label>
+                <input type="radio" value="Creil" name="ville">
+                Creil
+            </label>
+            <label>
+                <input type="radio" value="Nogent" name="ville">
+                Nogent
+            </label>
+            <label>
+                <input type="radio" value="Paris" name="ville">
+                Paris
+            </label>
+        </fieldset>
+
+        <textarea name="commentaire" id=""></textarea>
+
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

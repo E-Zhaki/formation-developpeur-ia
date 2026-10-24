@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emploi de temps</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        th, td {
+            border: 1px solid rgb(253, 247, 247);
+            color: rgb(6, 2, 27);
+        }
+
+        thead {
+            background-color: rgb(52, 30, 255);
+            color: white;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: rgb(74, 131, 164);
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: rgb(156, 69, 110);
+        }
+
+        div {
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Planning de la semaine 44, du lundi au vendredi</caption>
+            <thead>
+                <tr>
+                    <th class="horaire">Horaire</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9h00 - 10h00</td>
+                    <td rowspan="2">HTML</td>
+                    <td rowspan="2">FORM</td>
+                    <td rowspan="2">BOOT</td>
+                    <td>VEILLE</td>
+                    <td rowspan="2">PROJET</td>
+                </tr>
+                <tr>
+                    <td>10h45 - 12h15</td>
+                    <td>ATELIER</td>
+                </tr>
+                <tr>
+                    <td>12h00 - 13h00</td>
+                    <td colspan="5">PAUSE DEJEUNER</td>
+                </tr>
+                <tr>
+                    <td>13h00 - 15h00</td>
+                    <td colspan="2">EXERCICE bi</td>
+                    <td rowspan="2">EXERCICE boo</td>
+                    <td rowspan="2">PROJET GROUPE</td>
+                    <td rowspan="2">PROJET GROUPE DEMO</td>
+                </tr>
+                <tr>
+                    <td>9h00 - 10h00</td>
+                    <td>QUIZ</td>
+                    <td>9h00 - 10h00</td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td colspan="7">30 H DE FORMATION</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <legend>
+                </legend>                
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
