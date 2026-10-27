@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><b>Centre <span>Horizon</span></b></a>
+            </div>
+            <div class="navigation">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="formation.html">Formation</a>
+                <a href="#">Session</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#" class="break-mobile">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <h1> Apprenez un metier du <br class="mobile-only"> numérique</h1>
+            <p> Des formation courtes et concrètes en <br class="mobile-only"> développement, données et intelligence
+                <br class="mobile-only">artificielle
+            </p>
+            <button><a href="formation.html"> <b>Voir les formations</b></a></button>
+        </section>
+        <section class="section2">
+            <h2 class="texte-barre"><b> Nos formations</b></h2>
+            <div class="sections">
+                <div class="formation">
+                    <img src="images/dev.svg" alt="">
+                    <div>
+                        <h3>Développeur web</h3>
+                        <p>Créer des sites et des applications, du<br class="mobile-only"> HTML au back-end.</p>
+                        <p> Durée : 6 mois Niveau : débutant </p>
+                        <a href="#">Voir programme</a>
+                    </div>
+                </div>
+                <div class="formation">
+                    <img src="images/data.svg" alt="">
+                    <div>
+                        <h3>Analyste de données</h3>
+                        <p>Collecter, nettoyer et présenter des données<br class="mobile-only">pour aider à décider.</p>
+                        <p> Durée : 5 mois Niveau : débutant </p>
+                        <a href="#">Demander des informations</a>
+                    </div>
+                </div>
+                <div class="formation">
+                    <img src="images/ia.svg" alt="">
+                    <div>
+                        <h3>Développeur IA</h3>
+                        <p>Concevoir et intégrer des programmes <br class="mobile-only">d'intélligence artificielle.</p>
+                        <p> Durée : 12 mois Niveau : intermediaire </p>
+                        <a href="#">Demander des informations</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section3">
+            <h2 class="texte-barre"><b> Prochaines sessions</b></h2>
+            <p><b>Sessions ouvertes aux inscriptions</b></p>
+            <div class="containers">
+                <div class="row ">
+                    <div class="col-4  text-white p-3 color">Formation</div>
+                    <div class="col-4  text-white p-3 color">Début</div>
+                    <div class="col-4  text-white p-3 color">Durée</div>
+                </div>
+                <div class="row ">
+                    <div class="col-4  p-3 "><b>Développeur web</b></div>
+                    <div class="col-4  p-3  ">5 octobre 2026</div>
+                    <div class="col-4  p-3 ">6 mois</div>
+                </div>
+                <div class="row border border-start-0 border-end-0">
+                    <div class="col-4  p-3 color1 "><b>Analyste de données</b></div>
+                    <div class="col-4  p-3 color1 ">2 Novembre 2026</div>
+                    <div class="col-4  p-3 color1 ">5 mois</div>
+                </div>
+                <div class="row border  border-start-0 border-end-0  border-top-0 mb-3 ">
+                    <div class="col-4  p-3 "><b>Développeur IA</b></div>
+                    <div class="col-4  p-3 ">11 Janvier 2027</div>
+                    <div class="col-4  p-3 ">12 mois</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="formulaire">
+            <section class="section4">
+                <h2 class="texte-barre"><b> Nos contacter</b></h2>
+            </section>
+            <form action="#">
+
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Adresse email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="formation" class="form-label">Formation</label>
+                    <select class="form-select" id="formation" name="formation" required>
+                        <option value="" selected disabled>Développeur web</option>
+                        <option value="data_analyst">Analyste de données</option>
+                        <option value="dev_ia">Développeur IA</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="conditions" name="conditions" required>
+                    <label class="form-check-label" for="conditions">
+                        J'accepte que mes données servent à répondre à ma demande
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-orange">Envoyer</button>
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p> © 2026 Centre Horizon . 12 rue des Écoles, <br class="mobile-only">60100 Creil</br></p>
+    </footer>
+
+</body>
+
+</html>
