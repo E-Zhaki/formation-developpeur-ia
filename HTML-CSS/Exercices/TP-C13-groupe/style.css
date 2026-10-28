@@ -1,0 +1,205 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a.active {
+    color: #f9ab00;
+    font-weight: bold;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgb(11 42 91);
+
+
+}
+
+nav span {
+    color: #7cc4ff;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+
+}
+
+@media(max-width:768px) {
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .break-mobile {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: rgb(11 42 91);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.section1 {
+    text-align: center;
+    color: white;
+    padding: 10%;
+    background-color: #1a73e8;
+}
+
+button {
+    background: #f9ab00;
+    border-radius: 9px;
+    padding: 8px;
+    width: 50%
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+    font-size: 80%;
+
+}
+
+.section2 h2 {
+    margin: 25px;
+}
+
+.texte-barre {
+    border-left: 4px solid #0070f3;
+    padding-left: 12px;
+
+}
+
+.formation {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 25px;
+    width: 86%;
+
+}
+
+.formation img {
+    border-radius: 5px;
+}
+
+.formation div {
+    padding: 10px;
+}
+
+/* Visible par défaut sur mobile, masqué sur grand écran */
+.mobile-only {
+    display: inline;
+}
+
+.section3 h2 {
+    margin: 25px;
+}
+
+.section3 p {
+    margin: 25px;
+}
+
+.color {
+    background-color: rgb(11 42 91);
+}
+
+.color1 {
+    background-color: #f3f4f6;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.section4 h2 {
+    margin: 25px;
+}
+
+form {
+    padding: 20px;
+    margin: 0 15px 25px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+.btn-orange {
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    color: #070707;
+}
+
+.formulaire {
+    background-color: #f3f4f6;
+    padding: 25px 0 0;
+}
+
+.formulaire .section4 h2 {
+    margin: 0 25px 20px;
+}
+
+@media (min-width: 992px) {
+    .mobile-only {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navigation {
+        margin-left: 60%;
+        display: flex;
+        gap: 5%;
+    }
+
+    button {
+        width: 15%;
+    }
+
+    .sections {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containers {
+        padding: 0;
+        margin-left: 45px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .formation {
+        width: 25%;
+    }
+
+    .sections {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .formation img {
+        width: 100%;
+    }
+
+}

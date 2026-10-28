@@ -12,5 +12,6 @@ Chaque dossier rassemble les fichiers d'un exercice : HTML, CSS, images, énonc�
 | Creasoul | [index.html](creasoul/index.html) |
 | Ila Yoga | [index.html](ila-yoga/index.html) et [exercice responsive](ila-yoga/exo.html) |
 | Mindgeek | [index.html](mindgeek/index.html) |
+| Centre Horizon — projet de groupe | [Formation](projet-groupe/formation.html) |
 
 Les exercices Bootstrap se trouvent dans le module [BOOTSTRAP](../../BOOTSTRAP/Exercices/).
