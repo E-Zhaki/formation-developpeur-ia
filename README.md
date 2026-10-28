@@ -6,6 +6,7 @@ Cours, exercices et projets réalisés pendant ma formation de développeur en i
 
 - `HTML-CSS/` : cours et exercices de structure HTML, de mise en page CSS et de responsive.
 - `BOOTSTRAP/` : cours et exercices Bootstrap.
+- `JAVASCRIPT/` : support de cours et exercices sur les bases de JavaScript.
 - `SQL/` : cours, exercices de modélisation et scripts SQL.
 - `Docs/` : documents administratifs conservés localement et exclus du dépôt Git.
 
@@ -18,6 +19,7 @@ Chaque exercice de page web regroupe ses fichiers HTML, son CSS, ses images et s
 | --- | --- |
 | HTML et CSS | [Liste des exercices](HTML-CSS/Exercices/README.md) |
 | Bootstrap | [Grille responsive](BOOTSTRAP/Exercices/grille-responsive/index.html) |
+| JavaScript | [Introduction et exercices de base](JAVASCRIPT/Exercices/index.html) |
 | SQL | [Scripts](SQL/Exercices/Scripts/) et [modélisation](SQL/Exercices/Modelisation/) |
 
 Pour consulter une page web, ouvrir son fichier HTML dans un navigateur ou utiliser Live Server dans VS Code.
