@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Date correcete !</h1>
+
+
+    <p>
+        ADate valide
+        Demandez un jour, un mois et une année, puis indiquez si la date existe.
+        • le mois doit être compris entre 1 et 12 ;
+        • avril, juin, septembre et novembre ont 30 jours, les autres mois 31 ;
+        • février a 29 jours les années bissextiles (exercice précédent), 28 sinon.
+        Résultat attendu
+        31/04/2026 -> date invalide
+        29/02/2024 -> date valide
+        29/02/2026 -> date invalide
+    </p>
+
+    <script>
+        let jour = Number(prompt("Jour ?"));
+        let mois = Number(prompt("Mois ?"));
+        let annee = Number(prompt("Année ?"));
+
+        let estBissextile = ((annee % 4 === 0 && annee % 100 !== 0) || annee % 400 === 0);
+        let jourMax = 0;
+
+        switch (mois) {
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                jourMax = 30
+                break;
+            case 2:
+                jourMax = estBissextile ? 29 : 28;
+                break;
+            default:
+                jourMax = 31;
+        }
+
+        if (mois >= 1 && mois <= 12 && jour >= 1 && jour <= jourMax) {
+            console.log(`${jour}/${mois}/${annee} -> date valide`);
+        } else {
+            console.log(`${jour}/${mois}/${annee} -> date invalide`);
+        }
+
+    </script>
+</body>
+
+</html>
