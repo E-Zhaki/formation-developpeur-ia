@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul d’une remise — correction du cours — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Calcul d’une remise — correction du cours</h1>
+    <p>Version du cours : choisir le taux de remise, puis calculer la remise et le montant net une seule fois.</p>
+    <p><a href="remise.html">Revenir à mon exercice</a></p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let montant = prompt("Saisir un montant: ");
+        let taux = 0;
+
+        if (!isNaN(montant) && montant > 0) {
+            if (montant >= 2000 && montant <= 5000) {
+                taux = 5;
+            } else if (montant > 5000) {
+                taux = 10;
+            }
+
+            let remise = montant * taux / 100;
+            let net = montant - remise;
+
+            console.log(`Montant: ${montant}€, Net à payer ${net} pour une remise de ${taux}%`);
+        } else {
+            console.log("La valeur saisie n'est pas correcte !");
+        }
+    </script>
+</body>
+</html>

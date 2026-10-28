@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majeur ou mineur — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Majeur ou mineur</h1>
+    <p>Demander un âge et afficher :</p>
+    <ul><li>« Âge invalide » si la conversion échoue ou si l’âge est négatif ;</li><li>« Vous êtes mineur » si l’âge est inférieur à 18 ;</li><li>« Vous êtes majeur » sinon.</li></ul>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let age = Number(prompt("Entre votre age :"));
+
+        console.log(`Mon age est ${age} ans`);
+
+        if ( isNaN(age) || age < 0 ) {
+            console.log ("Age invalide")
+        }
+        else if (age < 18){
+            console.log("Vous etes mineur")
+        } else {
+            console.log("Vous etes majeur")
+        }
+    </script>
+</body>
+</html>

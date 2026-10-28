@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions selon le prix — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Conditions selon le prix</h1>
+    <p>Exemple du cours : utiliser <code>if</code>, <code>else if</code> et <code>else</code> pour choisir un message selon la valeur de <code>prix</code>.</p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        console.log("Debut")
+
+        let prix = 10;
+
+        if(prix >= 100){
+            console.log("trop chère")
+        }else if(prix >= 30 && prix <= 99){
+            console.log("moyen")
+        }else{
+            console.log("pas chère")
+        }
+
+        console.log("Fin")
+    </script>
+</body>
+</html>

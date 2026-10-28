@@ -3,238 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sommaire des exercices JavaScript</title>
 </head>
 <body>
-    <h1>Javascript</h1>
+    <h1>Exercices JavaScript</h1>
+    <p>Un dossier par chapitre et un fichier par exercice ou exemple du cours.</p>
+    <p>Ouvre un exercice pour le lancer, puis consulte la console du navigateur (F12).</p>
+    <p><a href="../Leçons/Support_JavaScript.pdf">Ouvrir le support du cours</a></p>
 
-    <script>
-        // let prenom = "Mihai";
-        // let age = 20;
-        // let prix = 29.9;
-        // let isPresent = true; // false
+    <h2>Variables, saisie et affichage</h2>
+    <ul>
+        <li><a href="variables/variables-types.html">Variables et types</a></li>
+        <li><a href="variables/saisie-types.html">Saisie et types</a></li>
+        <li><a href="variables/affichage.html">Afficher des variables</a></li>
+    </ul>
 
+    <h2>Opérateurs, calculs et comparaisons</h2>
+    <ul>
+        <li><a href="operateurs/addition.html">Addition de deux nombres</a></li>
+        <li><a href="operateurs/celsius-fahrenheit.html">Celsius vers Fahrenheit</a></li>
+        <li><a href="operateurs/comparaisons.html">Comparer des valeurs</a></li>
+    </ul>
 
-        // let prenom = prompt ("Entrer un prénom");
-        // let age = prompt ("Entrer un age");
-
-        // console.log (typeof age);
-        // console.log (typeof prenom);
-
-
-        // console.log("Debut du programme");
-        // let prenom = "Mihai";
-        // let age = 20;
-
-        // console.log("prenom: " + prenom + "age: " + age );
-        // console.log(`prénom ${prenom}, mon âge ${age}`);
-
-        // (x * 3) + 1;
-
-        // let x = prompt ("Entrer de x: ");
-        // let y = prompt ("Entrer de y: ");
-
-        // let resultat = Number(x) + Number(y);
-
-        // console.log (resultat);12
-
-
-        // let c = parseInt(prompt("temperature en Celsius : "));
-
-        // let farenheit = c * 9 / 5 + 32;
-
-        // console.log(`${c} degrès celsius => ${farenheit} en Farenheit`);
-
-
-        // let a = 5;
-        // let b = "5";
-
-        // console.log (a == b);
-        // console.log (a === b);
-
-        // console.log("Debut")
-        
-        // let prix = 10;
-
-        // if(prix >= 100){
-        //     console.log("trop chère")
-        // }else if(prix >= 30 && prix <= 99){
-        //     console.log("moyen")
-        // }else{
-        //     console.log("pas chère")
-        // }
-
-        // console.log("Fin")
-
-
-        // let nombre = Number(prompt("Entre un nombre :"));
-
-        // console.log(nombre % 2);
-
-
-        // if (nombre % 2 === 0) {
-        //     console.log("pair");
-        // } else {
-        //     console.log("impair");
-        // }
-
-        //         Majeur ou mineur
-        // Demandez l’âge de l’utilisateur et affichez :
-        // •    « Âge invalide » si la saisie n’est pas un nombre ou si elle est négative ;
-        // •    « Vous êtes mineur » si l’âge est inférieur à 18 ;
-        // •    « Vous êtes majeur » sinon.
-
-
-        // let age = Number(prompt("Entre votre age :"));
-
-        // console.log(`Mon age est ${age} ans`);
-
-        // if ( isNaN(age) || age < 0 ) {
-        //     console.log ("Age invalide")
-        // }
-        // else if (age < 18){
-        //     console.log("Vous etes mineur")
-        // } else {
-        //     console.log("Vous etes majeur")
-        // }
-
-
-        //         Calcul d’une remise    ★★☆
-        // À partir d’un montant saisi par l’utilisateur, calculez le montant net à payer, sachant que l’on accorde :
-        // •    une remise de 5 % si le montant est compris entre 2 000 € et 5 000 € (ces valeurs comprises) ;
-        // •    une remise de 10 % si le montant est supérieur à 5 000 € ;
-        // •    aucune remise en dessous de 2 000 €.
-        // Résultat attendu
-        // Montant : 1500 € -> net : 1500 €
-        // Montant : 3000 € -> net : 2850 €
-        // Montant : 5000 € -> net : 4750 €
-        // Montant : 6000 € -> net : 5400 €
-
-
-        // let prix = Number(prompt("Entrez le prix :"));
-
-        // let remise5 = prix * 5/100
-        // let remise10 = prix * 10/100
-        // let net5 = prix - remise5
-        // let net10 = prix - remise10
-
-        // if ( prix > 2000 && prix <= 5000 ) {
-        //     console.log (net5)
-        // }
-        // else if (prix > 5000 ){
-        //     console.log(net10)
-        // } else {
-        //     console.log(prix)
-        // }
-
-
-        // correction ----------------------------------------------------------------------------------
-
-        // let montant = prompt("Saisir un montant: ");
-        // let taux = 0;
-
-        // if (!isNaN(montant) && montant > 0) {
-        //     if (montant >= 2000 && montant <= 5000) {
-        //         taux = 5;
-        //     } else if (montant > 5000) {
-        //         taux = 10;
-        //     }
-
-        //     let remise = montant * taux / 100;
-        //     let net = montant - remise;
-
-        //     console.log(Montant: ${montant}€, Net à payer ${net} pour une remise de ${taux}%)
-        // } else {
-        //     console.log("La valeur saisie n'est pas correcte !");
-        // }
-
-        // ----------------------------------------------------------------------------------
-
-        //         Jour de la semaine
-        // Demandez un numéro de 1 à 7 et affichez le jour correspondant (1 = lundi, 7 = dimanche) avec un switch. Pour tout autre numéro, affichez « Numéro invalide ».
-        // Ajoutez « (week-end) » pour le samedi et le dimanche, en regroupant ces deux case.
-        // Résultat attendu
-        // 3 -> mercredi
-        // 6 -> samedi (week-end)
-        // 9 -> Numéro invalide
-
-        
-        // let numero = parseInt(prompt("Numéro du jour (1 à 7)"));
-        // let jour;
-
-        // switch (numero) {
-        //     case 1:
-        //         jour = "lundi";
-        //         break;
-        //     case 2:
-        //         jour = "mardi";
-        //         break;
-        //     case 3:
-        //         jour = "mercredi";
-        //         break;
-        //     case 4:
-        //         jour = "jeudi";
-        //         break
-        //     case 5:
-        //         jour = "vendredi";
-        //         break
-        //     case 6:
-        //         jour = "samedi";
-        //         break
-        //     case 7:
-        //         jour = "dimanche";
-        //         break
-        //     default:
-        //         jour = "numéro invalide";
-        // }
-
-        // console.log(`${numero} => ${jour}`);
-
-        /*-----------------------------------------------------------------------------------------*/
-
-        //         Mention au diplôme
-        // Demandez une note sur 20 et affichez la mention correspondante :
-        // •    moins de 10 : Ajourné ;
-        // •    de 10 à moins de 12 : Passable ;
-        // •    de 12 à moins de 14 : Assez bien ;
-        // •    de 14 à moins de 16 : Bien ;
-        // •    16 et plus : Très bien.
-        // Une note en dehors de l’intervalle 0 à 20 affiche « Note invalide ».
-        // Indice : testez d’abord la note invalide, puis les mentions de la plus haute à la plus basse : les conditions deviennent plus simples.
-
-
-        let numero = parseInt(prompt("Note sur 20 : "));
-            let note;
-
-            switch (numero) {
-                case 0:
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                    note = "Ajourné";
-                    break
-                case 10:
-                case 11:
-                case 12:
-                    note = "Passable";
-                    break
-                case 13:
-                
-                
-            }
-
-            console.log(`${numero} sur ${note}`);
-
-
-
-
-    </script>
-    
+    <h2>Conditions</h2>
+    <ul>
+        <li><a href="conditions/prix.html">Conditions selon le prix</a></li>
+        <li><a href="conditions/pair-impair.html">Nombre pair ou impair</a></li>
+        <li><a href="conditions/majeur-mineur.html">Majeur ou mineur</a></li>
+        <li><a href="conditions/remise.html">Calcul d’une remise — mon exercice</a></li>
+        <li><a href="conditions/remise-correction.html">Calcul d’une remise — correction du cours</a></li>
+        <li><a href="conditions/jour-semaine.html">Jour de la semaine</a> — à compléter</li>
+        <li><a href="conditions/mention-diplome.html">Mention au diplôme — essai avec switch</a> — à compléter</li>
+        <li><a href="conditions/mention-diplome-correction.html">Mention au diplôme — corrections du cours</a></li>
+        <li><a href="conditions/bissextile.html">Année bissextile</a> — à compléter</li>
+    </ul>
 </body>
 </html>

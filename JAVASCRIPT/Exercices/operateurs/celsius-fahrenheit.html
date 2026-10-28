@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius vers Fahrenheit — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Celsius vers Fahrenheit</h1>
+    <p>Exemple du cours : demander une température entière en Celsius et la convertir en Fahrenheit.</p>
+    <p>Formule : Celsius × 9 ÷ 5 + 32.</p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let c = parseInt(prompt("temperature en Celsius : "));
+
+        let farenheit = c * 9 / 5 + 32;
+
+        console.log(`${c} degrès celsius => ${farenheit} en Farenheit`);
+    </script>
+</body>
+</html>

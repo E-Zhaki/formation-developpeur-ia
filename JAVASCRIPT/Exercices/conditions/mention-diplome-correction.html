@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mention au diplôme — corrections du cours — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Mention au diplôme — corrections du cours</h1>
+    <p>Version du cours avec les mentions testées de la plus haute à la plus basse. L’autre version, avec les intervalles, est conservée en commentaire dans le script.</p>
+    <p><a href="mention-diplome.html">Revenir à l’essai avec switch</a></p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let note = Number(prompt("Entrer la note (0...20)"));
+        let mention;
+
+        if (isNaN(note) || note < 0 || note > 20) {
+            mention = "invalide";
+        } else if (note >= 16) {
+            mention = "Très bien";
+        } else if (note >= 14) {
+            mention = "Bien";
+        } else if (note >= 12) {
+            mention = "Assez bien";
+        } else if (note >= 10) {
+            mention = "Passable";
+        } else {
+            mention = "Ajourné";
+        }
+
+        console.log(`Mention: ${mention}`);
+
+        /*
+        Autre version vue en cours, avec les intervalles :
+
+        if (isNaN(note) || note < 0 || note > 20) {
+            mention = "invalide";
+        } else if (note < 10) {
+            mention = "Ajourné";
+        } else if (note >= 10 && note < 12) {
+            mention = "Passable";
+        } else if (note >= 12 && note < 14) {
+            mention = "Assez bien";
+        } else if (note >= 14 && note < 16) {
+            mention = "Bien";
+        } else {
+            mention = "Très bien";
+        }
+        */
+    </script>
+</body>
+</html>

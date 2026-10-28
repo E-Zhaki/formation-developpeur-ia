@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mention au diplôme — essai avec switch — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Mention au diplôme — essai avec switch</h1>
+    <p>Demander une note sur 20 et afficher sa mention :</p>
+    <ul><li>moins de 10 : Ajourné ;</li><li>de 10 à moins de 12 : Passable ;</li><li>de 12 à moins de 14 : Assez bien ;</li><li>de 14 à moins de 16 : Bien ;</li><li>de 16 à 20 : Très bien ;</li><li>en dehors de 0 à 20 ou saisie non numérique : Note invalide.</li></ul>
+    <p><strong>Essai à terminer :</strong> le <code>switch (true)</code> du cours ne contient encore que les deux premiers cas. Le contrôle de la note et les autres cas restent à ajouter.</p>
+    <p><a href="mention-diplome-correction.html">Voir les versions avec if / else du cours</a></p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let note = Number(prompt('Entrer la note (0...20)')); // 15
+        let mention;
+
+        // Afficher la mention après avoir choisi sa valeur.
+
+        switch (true) {
+            case note >= 16:
+                mention = "Très bien";
+                break;
+            case note >= 14:
+                mention = "Bien";
+                break;
+        }
+
+        console.log(`Mention: ${mention}`);
+    </script>
+</body>
+</html>
