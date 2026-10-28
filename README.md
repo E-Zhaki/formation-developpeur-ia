@@ -24,3 +24,7 @@ Chaque exercice de page web regroupe ses fichiers HTML, son CSS, ses images et s
 
 Pour consulter une page web, ouvrir son fichier HTML dans un navigateur ou utiliser Live Server dans VS Code.
 Certaines pages chargent des polices, des icônes ou Bootstrap depuis des services externes et nécessitent une connexion Internet.
+
+## Travailler avec Git et GitHub
+
+Le [guide GitHub](GUIDE-GITHUB.md) présente l'organisation des branches, les commits, les pull requests et le bilan des pratiques de la formation.
