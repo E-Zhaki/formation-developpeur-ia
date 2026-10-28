@@ -19,7 +19,7 @@ Chaque exercice de page web regroupe ses fichiers HTML, son CSS, ses images et s
 | --- | --- |
 | HTML et CSS | [Liste des exercices](HTML-CSS/Exercices/README.md) |
 | Bootstrap | [Grille responsive](BOOTSTRAP/Exercices/grille-responsive/index.html) |
-| JavaScript | [Introduction et exercices de base](JAVASCRIPT/Exercices/index.html) |
+| JavaScript | [Exercices classés par chapitre](JAVASCRIPT/Exercices/index.html) |
 | SQL | [Scripts](SQL/Exercices/Scripts/) et [modélisation](SQL/Exercices/Modelisation/) |
 
 Pour consulter une page web, ouvrir son fichier HTML dans un navigateur ou utiliser Live Server dans VS Code.

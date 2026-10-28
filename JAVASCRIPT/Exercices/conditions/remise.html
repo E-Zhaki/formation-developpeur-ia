@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul d’une remise — mon exercice — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Calcul d’une remise — mon exercice</h1>
+    <p>Calculer le montant net à payer selon le prix saisi :</p>
+    <ul><li>moins de 2 000 € : aucune remise ;</li><li>de 2 000 € à 5 000 €, bornes comprises : 5 % ;</li><li>plus de 5 000 € : 10 %.</li></ul>
+    <p>Exemples : 3 000 € → 2 850 € ; 5 000 € → 4 750 € ; 6 000 € → 5 400 €.</p>
+    <p><a href="remise-correction.html">Voir la correction du cours</a></p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let prix = Number(prompt("Entrez le prix :"));
+
+        let remise5 = prix * 5/100
+        let remise10 = prix * 10/100
+        let net5 = prix - remise5
+        let net10 = prix - remise10
+
+        if ( prix >= 2000 && prix <= 5000 ) {
+            console.log (net5)
+        }
+        else if (prix > 5000 ){
+            console.log(net10)
+        } else {
+            console.log(prix)
+        }
+    </script>
+</body>
+</html>

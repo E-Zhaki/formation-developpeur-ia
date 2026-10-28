@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre pair ou impair — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Nombre pair ou impair</h1>
+    <p>Demander un nombre entier et indiquer s’il est pair ou impair avec le reste de la division par 2.</p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let nombre = Number(prompt("Entre un nombre :"));
+
+        console.log(nombre % 2);
+
+
+        if (nombre % 2 === 0) {
+            console.log("pair");
+        } else {
+            console.log("impair");
+        }
+    </script>
+</body>
+</html>

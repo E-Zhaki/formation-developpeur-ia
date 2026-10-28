@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jour de la semaine — JavaScript</title>
+</head>
+<body>
+    <p><a href="../index.html">Retour au sommaire JavaScript</a></p>
+    <h1>Jour de la semaine</h1>
+    <p>Demander un numéro de 1 à 7 et afficher le jour correspondant avec un <code>switch</code>. Pour un autre numéro, afficher « Numéro invalide ».</p>
+    <p><strong>À compléter :</strong> ajouter « (week-end) » pour le samedi et le dimanche en regroupant les deux <code>case</code>. Le code conserve la première version vue en cours.</p>
+    <p>Les affichages de <code>console.log()</code> se lisent dans la console du navigateur (F12).</p>
+
+    <script>
+        let numero = parseInt(prompt("Numéro du jour (1 à 7)"));
+        let jour;
+
+        switch (numero) {
+            case 1:
+                jour = "lundi";
+                break;
+            case 2:
+                jour = "mardi";
+                break;
+            case 3:
+                jour = "mercredi";
+                break;
+            case 4:
+                jour = "jeudi";
+                break
+            case 5:
+                jour = "vendredi";
+                break
+            case 6:
+                jour = "samedi";
+                break
+            case 7:
+                jour = "dimanche";
+                break
+            default:
+                jour = "numéro invalide";
+        }
+
+        console.log(`${numero} => ${jour}`);
+
+        // Autre déclaration vue dans le cours :
+        // const numero = parseInt(prompt("Numéro du jour (1 à 7)"));
+    </script>
+</body>
+</html>
