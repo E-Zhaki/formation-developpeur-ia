@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prix TTC — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        Prix TTC
+
+        Écrivez la fonction calculerTTC(prixHT, taux) qui renvoie le prix TTC arrondi au centime.
+        Si le taux n’est pas donné, il vaut 0,2 (20 %).
+
+        Résultat attendu
+        calculerTTC(100) -> 120
+        calculerTTC(100, 0.055) -> 105.5
+    </p>
+
+    <script>
+        // Premier essai conservé : le taux était toujours fixé à 20 %.
+        /*
+        function calculerTTC(prixHT, taux) {
+            return prixHT * 1.2;
+        }
+        */
+
+        // Correction : utiliser le taux reçu, ou 20 % s'il n'est pas donné.
+        function calculerTTC(prixHT, taux = 0.2) {
+            let prixTTC = prixHT + prixHT * taux;
+
+            // Multiplier par 100, arrondir, puis diviser par 100 pour garder les centimes.
+            return Math.round(prixTTC * 100) / 100;
+        }
+
+        console.log(calculerTTC(100)); // 120
+        console.log(calculerTTC(100, 0.055)); // 105.5
+    </script>
+</body>
+</html>

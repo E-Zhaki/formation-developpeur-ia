@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Est premier — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        La fonction estPremier(n)
+
+        Reprenez votre programme « Nombre premier » de la partie Boucles
+        et transformez-le en fonction estPremier(n).
+
+        La fonction reçoit un entier n et renvoie true s’il est premier, false sinon.
+
+        Elle n’affiche rien et ne demande rien à l’utilisateur :
+        la saisie et l’affichage restent à l’extérieur.
+    </p>
+
+    <script>
+        function estPremier(n) {
+            // Les nombres inférieurs à 2 ne sont pas premiers.
+            if (n < 2) {
+                return false;
+            }
+
+            for (let diviseur = 2; diviseur < n; diviseur++) {
+                if (n % diviseur === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // L'affichage reste à l'extérieur de la fonction.
+        console.log(estPremier(7)); // true
+        console.log(estPremier(12)); // false
+        console.log(estPremier(1)); // false
+    </script>
+</body>
+</html>

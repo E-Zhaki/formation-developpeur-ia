@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de diviseurs — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        Nombre de diviseurs
+
+        La fonction nbDiviseurs(n) reçoit un entier positif et renvoie son nombre de diviseurs.
+
+        Résultat attendu
+        nbDiviseurs(5) -> 2 (1 et 5)
+        nbDiviseurs(12) -> 6 (1, 2, 3, 4, 6 et 12)
+
+        Notions : boucle dans une fonction, %, compteur.
+    </p>
+
+    <script>
+        function nbDiviseurs(n) {
+            let compteur = 0;
+
+            // Essayer tous les diviseurs possibles, de 1 jusqu'à n compris.
+            for (let diviseur = 1; diviseur <= n; diviseur++) {
+                if (n % diviseur === 0) {
+                    compteur++;
+                }
+            }
+
+            return compteur;
+        }
+
+        console.log(nbDiviseurs(5)); // 2
+        console.log(nbDiviseurs(12)); // 6
+    </script>
+</body>
+</html>

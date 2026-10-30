@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        Mirror
+
+        La fonction mirror(texte) reçoit une chaîne de caractères et la renvoie inversée.
+
+        Résultat attendu
+        mirror("test") -> "tset"
+        mirror("Simplon") -> "nolpmiS"
+
+        Les méthodes split(), reverse() et join() sont interdites : parcourez la chaîne avec une boucle.
+
+        Notions : boucle sur une chaîne, length, accès à un caractère.
+    </p>
+
+    <script>
+        // Premier essai conservé : la boucle ne construisait pas encore le résultat.
+        /*
+        function mirror(texte) {
+            let resultat = "";
+            let dernierePosition = texte.length - 1;
+            for (let position = dernierePosition; position >= 0; position--) {
+
+            }
+        }
+        */
+
+        // Correction : parcourir le texte de la dernière lettre à la première.
+        function mirror(texte) {
+            let resultat = "";
+            let dernierePosition = texte.length - 1;
+
+            for (let position = dernierePosition; position >= 0; position--) {
+                resultat = resultat + texte[position];
+            }
+
+            return resultat;
+        }
+
+        console.log(mirror("test")); // tset
+        console.log(mirror("Simplon")); // nolpmiS
+    </script>
+</body>
+</html>

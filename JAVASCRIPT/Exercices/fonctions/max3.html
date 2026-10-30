@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le plus grand de trois — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        Le plus grand de trois
+
+        Écrivez la fonction max3(a, b, c) qui renvoie le plus grand des trois nombres,
+        sans utiliser Math.max().
+
+        Résultat attendu
+        max3(4, 9, 2) -> 9
+        max3(-1, -5, -3) -> -1
+    </p>
+
+    <script>
+        function max3(a, b, c) {
+            // Au départ, on garde le premier nombre.
+            let maximum = a;
+
+            if (b > maximum) {
+                maximum = b;
+            }
+
+            if (c > maximum) {
+                maximum = c;
+            }
+
+            return maximum;
+        }
+
+        console.log(max3(4, 9, 2)); // 9
+        console.log(max3(-1, -5, -3)); // -1
+    </script>
+</body>
+</html>
