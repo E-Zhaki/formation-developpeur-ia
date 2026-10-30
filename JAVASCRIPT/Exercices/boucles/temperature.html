@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Température et boucle while — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au sommaire des boucles</a></p>
+    <h1>Température et boucle while</h1>
+    <p>Exemple du cours : redemander une température tant qu’elle est inférieure à 20 ou supérieure ou égale à 31.</p>
+    <p>Le message final s’affiche dans la console du navigateur (F12).</p>
+
+    <script>
+        let temp = prompt("Température");
+
+        while (temp < 20 || temp >= 31) {
+            temp = prompt("Température");
+        }
+
+        console.log("Donc je vais à simplon");
+    </script>
+</body>
+</html>

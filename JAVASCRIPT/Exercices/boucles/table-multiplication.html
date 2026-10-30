@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table de multiplication — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au chapitre sur les boucles</a></p>
+    <h1>Table de multiplication</h1>
+    <p>Demandez un nombre compris entre 3 et 9 et affichez sa table de multiplication de 1 à 10.</p>
+    <p>Correction vue en cours. Les résultats s’affichent dans la console du navigateur (F12).</p>
+
+    <script>
+        // Ancien essai conservé : i était utilisé en dehors de la boucle.
+        /*
+            let nombre = Number(prompt("Choisis un nombre entre 3 et 9 :"));
+
+            for (let i = 1; i <= 10; i++) {
+
+            }
+
+            console.log(nombre * i);
+        */
+
+        // Correction du cours.
+        let nombre;
+
+        do {
+            nombre = Number(prompt("Un nombre [3, 9]"));
+        } while (isNaN(nombre) || nombre < 3 || nombre > 9);
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(`${nombre} X ${i} = ${nombre * i}`);
+        }
+    </script>
+</body>
+</html>

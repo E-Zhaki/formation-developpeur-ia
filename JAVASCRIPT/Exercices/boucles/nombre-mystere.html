@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le nombre mystère — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au sommaire des boucles</a></p>
+    <h1>Le nombre mystère</h1>
+    <p>
+        L’ordinateur choisit un nombre entier au hasard entre 1 et 100.
+        L’utilisateur propose des nombres jusqu’à trouver le bon.
+        À chaque essai, le programme répond « C’est plus » ou « C’est moins ».
+        À la fin, il affiche le nombre d’essais.
+    </p>
+    <h2>Résultat attendu</h2>
+    <pre>Votre proposition : 50
+C'est moins
+Votre proposition : 25
+C'est plus
+Votre proposition : 37
+Bravo, trouvé en 3 essais !</pre>
+    <p>Code vu en cours. Les propositions se saisissent dans les fenêtres du navigateur et le résultat final s’affiche dans la console (F12).</p>
+
+    <script>
+        let mystere = Math.floor(Math.random() * 100) + 1;
+
+        let proposition = Number(prompt("Votre proposition :"));
+        let essais = 1;
+
+        while (mystere !== proposition) {
+            if (proposition > mystere) {
+                proposition = Number(prompt("C'est moins"));
+            } else if (proposition < mystere) {
+                proposition = Number(prompt("C'est plus"));
+            }
+
+            essais++;
+        }
+
+        console.log(`Bravo, trouvé en ${essais} essais !`);
+    </script>
+</body>
+</html>

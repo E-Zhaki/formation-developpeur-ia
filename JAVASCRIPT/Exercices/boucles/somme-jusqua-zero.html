@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somme jusqu’à zéro — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au chapitre sur les boucles</a></p>
+    <h1>Somme jusqu’à zéro</h1>
+    <p>
+        Calculez la somme d’une suite de nombres entiers saisis par l’utilisateur.
+        La saisie s’arrête quand l’utilisateur tape 0. Affichez alors la somme.
+    </p>
+    <h2>Résultat attendu</h2>
+    <pre>Nombre : 5
+Nombre : 12
+Nombre : 3
+Nombre : 0
+Somme : 20</pre>
+    <h2>Bonus</h2>
+    <p>Affichez aussi combien de nombres ont été saisis et leur moyenne.</p>
+    <p>Correction vue en cours, bonus inclus. Les résultats s’affichent dans la console du navigateur (F12).</p>
+
+    <script>
+        let somme = 0;
+        let compteur = 0;
+        let nombre = Number(prompt("un nombre (0 pour stop)"));
+
+        while (nombre !== 0) {
+            somme = somme + nombre; // somme += nombre;
+            compteur++;
+            nombre = Number(prompt("un nombre (0 pour stop)"));
+        }
+
+        console.log("somme " + somme);
+        console.log("nombre " + compteur);
+
+        compteur ? console.log("moyenne " + somme / compteur) : console.log("Pas de moyenne ");
+    </script>
+</body>
+</html>

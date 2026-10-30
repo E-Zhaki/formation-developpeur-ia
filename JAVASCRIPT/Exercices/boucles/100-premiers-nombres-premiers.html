@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 100 premiers nombres premiers — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au chapitre sur les boucles</a></p>
+    <h1>Les 100 premiers nombres premiers</h1>
+    <p>Affichez les 100 premiers nombres premiers.</p>
+    <h2>Résultat attendu</h2>
+    <pre>2
+3
+5
+7
+...
+523
+541</pre>
+    <p>Code vu en cours. Les résultats s’affichent dans la console du navigateur (F12).</p>
+    <script>
+
+
+    // Les 100 premiers nombres premiers
+    // Affichez les 100 premiers nombres premiers.
+    // Résultat attendu
+    // 2
+    // 3
+    // 5
+    // 7
+    // ...
+    // 523
+    // 541
+
+        let compteur = 0;
+        let nombre = 2;
+
+        while (compteur < 100) {
+            let isPremier = true;
+
+            for (let i = 2; i < nombre; i++) {
+                if (nombre % i == 0) {
+                    isPremier = false;
+                    break;
+                }
+            }
+
+            if (isPremier) {
+                console.log(nombre);
+                compteur++;
+            }
+
+            nombre++;
+        }
+
+
+
+    </script>
+</body>
+</html>
