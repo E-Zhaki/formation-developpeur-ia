@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compter sans les multiples de 3 — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au sommaire des boucles</a></p>
+    <h1>Compter sans les multiples de 3</h1>
+    <p>Exemple du cours : compter les nombres de 1 à 100 qui ne sont pas des multiples de 3.</p>
+    <p>Le résultat s’affiche dans la console du navigateur (F12).</p>
+
+    <script>
+        let total = 0;
+
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 !== 0) {
+                total++;
+            }
+        }
+
+        console.log(total);
+    </script>
+</body>
+</html>

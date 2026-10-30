@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille 10 × 10 — JavaScript</title>
+</head>
+<body>
+    <p><a href="index.html">Retour au sommaire des boucles</a></p>
+    <h1>Grille 10 × 10</h1>
+    <p>
+        Affichez dans la console une grille de 10 lignes et 10 colonnes.
+        Chaque case contient le numéro de colonne, un tiret, puis le numéro de ligne.
+    </p>
+    <h2>Résultat attendu</h2>
+    <pre>1-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1
+1-2 2-2 3-2 4-2 5-2 6-2 7-2 8-2 9-2 10-2
+...
+1-10 2-10 3-10 4-10 5-10 6-10 7-10 8-10 9-10 10-10</pre>
+    <p>Code vu en cours. La grille s’affiche dans la console du navigateur (F12).</p>
+
+    <script>
+        // Boucle externe : Une ligne pour chaque tour (1 à 10)
+        for (let ligne = 1; ligne <= 10; ligne++) {
+
+            // on repart d'un texte vide
+            let texte = "";
+
+            // Boucle interne : une case pour chaque tour
+            for (let colonne = 1; colonne <= 10; colonne++) {
+
+                // Construit la case colonne-ligne
+                texte += `${colonne}-${ligne}`.padEnd(6);
+            }
+
+            console.log(texte);
+        }
+    </script>
+</body>
+</html>
