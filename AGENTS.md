@@ -8,6 +8,7 @@ Ces consignes reprennent les préférences de Zhaki pour ce projet.
 - Dans chaque module, utiliser `Leçons/` pour les supports et `Exercices/` pour le code.
 - Pour JavaScript, classer les petits exercices par chapitre (`variables/`, `operateurs/`, `conditions/`, puis les autres chapitres lorsqu'ils sont étudiés). Utiliser un fichier HTML par exercice et garder `Exercices/index.html` comme sommaire. Conserver les essais et les corrections du cours en indiquant les exercices encore incomplets.
 - Garder ensemble les fichiers d'un même exercice. Éviter les doublons et les déplacements inutiles.
+- Pour les fichiers d'exercices, garder une présentation minimale : la consigne et les résultats attendus en texte simple dans un seul `<p>`, puis le `<script>` pour travailler. Éviter les balises supplémentaires comme `<code>`, `<h1>`, `<h2>` et `<pre>`. Une consigne en commentaire dans le script convient aussi.
 - Après un déplacement, vérifier que les fichiers sont conservés et mettre à jour les chemins et les liens du README.
 
 ## Branches et sauvegardes
