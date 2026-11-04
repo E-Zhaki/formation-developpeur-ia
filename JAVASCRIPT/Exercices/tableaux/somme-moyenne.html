@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        app.js
+        const notes = [12, 15, 9, 18, 11];
+        Avec une boucle for...of, calculez la somme et la moyenne des notes.
+        Résultat attendu
+        Somme : 65
+        Moyenne : 13
+        Bonus
+        Trouvez la meilleure note sans utiliser Math.max().
+    </p>
+
+    <script>
+        const notes = [12, 15, 9, 18, 11];
+
+        let somme = 0;
+        let max = notes[0];
+
+        for (const note of notes) {
+            somme += note;
+            if (note > max) {
+                max = note;
+            }
+        }
+
+        console.log("Somme: " + somme);
+        console.log("Moyenne: " + (somme / notes.length));
+        console.log("Meilleure: " + max); //Math.max(...notes)
+    </script>
+</body>
+
+</html>
