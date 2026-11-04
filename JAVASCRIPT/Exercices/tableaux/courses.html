@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de courses — Tableaux JavaScript</title>
+</head>
+
+<body>
+    <p>
+        const courses = ["pain", "lait", "riz"];
+        Ajoutez « tomates » à la fin du tableau et « café » au début puis afficher le tableau.
+        Affichez le nombre d'articles, le premier et le dernier article.
+        Retirez le dernier article, puis afficher le tableau.
+        Ajouter chocolat avant lait, puis afficher le tableau.
+        Retirer lait, puis afficher le tableau.
+    </p>
+
+    <script>
+        const courses = ["pain", "lait", "riz"];
+
+        courses.push("tomates");
+        courses.unshift("café");
+        afficher(courses);
+
+        console.log("nb articles: " + courses.length);
+        console.log("premier: " + courses[0]);
+        console.log("dernier: " + courses.at(-1)); // ou courses[courses.length - 1]
+
+        courses.pop();
+        afficher(courses);
+
+        courses.splice(courses.indexOf("lait"), 0, "chocolat");
+        afficher(courses);
+
+        courses.splice(courses.indexOf("lait"), 1);
+        afficher(courses);
+        /**
+         * Pour afficher un tableau.
+         * @param {Array} produits - Liste d'articles.
+         */
+        function afficher(produits) {
+            for (let index = 0; index < produits.length; index++) {
+                console.log((index + 1) + ": " + produits[index]);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

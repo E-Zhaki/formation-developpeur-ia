@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre, feuille, ciseau — JavaScript</title>
+</head>
+<body>
+    <p>
+        Mini-projet : pierre, feuille, ciseau
+
+        const choix = ["pierre", "feuille", "ciseau"];
+
+        L’utilisateur saisit pierre, feuille ou ciseau, en minuscules ou en majuscules.
+        L’ordinateur choisit au hasard l’une des trois possibilités,
+        puis le programme annonce le résultat.
+
+        Règles
+        Même choix : égalité.
+        La pierre écrase le ciseau : la pierre gagne.
+        Le ciseau découpe la feuille : le ciseau gagne.
+        La feuille enveloppe la pierre : la feuille gagne.
+
+        Étapes conseillées
+        1. Lire la saisie et la mettre en minuscules ;
+           redemander tant qu’elle n’est pas dans le tableau choix.
+        2. Tirer le choix de l’ordinateur avec Math.random().
+        3. Comparer les deux choix et afficher le gagnant.
+
+        Résultat attendu
+        Votre choix : Pierre
+        L’ordinateur a choisi : ciseau
+        Vous gagnez : la pierre écrase le ciseau !
+    </p>
+
+    <script>
+        // Mon premier essai :
+        // const choix = ["pierre", "feuille", "ciseau"];
+        // let joueur = prompt("Pierre, feuille ou ciseau ?");
+
+        // Correction du formateur.
+        const choix = ["pierre", "feuille", "ciseau"];
+        let joueur;
+
+        do {
+            // Appliquer ?? avant toLowerCase() pour gérer le bouton Annuler.
+            // Version reçue : prompt("pierre, feuille, ciseau").toLowerCase() ?? "";
+            joueur = (prompt("pierre, feuille, ciseau") ?? "").toLowerCase();
+        } while (!choix.includes(joueur));
+
+        let ordi = choix[Math.floor(Math.random() * choix.length)];
+        console.log("Joueur: " + joueur);
+        console.log("Ordi: " + ordi);
+
+        if (joueur === ordi) {
+            console.log("égalité");
+        } else if (joueur == "pierre" && ordi == "ciseau") {
+            console.log("Le joueur a gagné. La pierre écrase le ciseau");
+        } else if (joueur == "ciseau" && ordi == "feuille") {
+            console.log("Le joueur a gagné. Le ciseau découpe la feuille");
+        } else if (joueur == "feuille" && ordi == "pierre") {
+            console.log("Le joueur a gagné. La feuille enveloppe la pierre");
+        } else {
+            console.log("Le joueur a perdu.");
+        }
+
+        // Exemple du formateur pour rechercher une valeur avec une boucle.
+        // Le tableau tab serait à définir pour utiliser cette fonction.
+        // function estDansTab(valeur) {
+        //     for (let v of tab) {
+        //         if (valeur == v) return true;
+        //     }
+        //     return false;
+        // }
+    </script>
+</body>
+</html>

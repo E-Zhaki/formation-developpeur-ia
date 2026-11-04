@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La calculatrice — Fonctions JavaScript</title>
+</head>
+<body>
+    <p>
+        La calculatrice
+
+        Écrivez la fonction calculer(a, operateur, b), qui reçoit deux nombres
+        et un opérateur ("+", "-", "*" ou "/") et renvoie le résultat de l’opération.
+
+        Si l’opérateur est inconnu, ou si on divise par 0, la fonction renvoie null.
+
+        Résultat attendu
+        calculer(8, "+", 2) -> 10
+        calculer(8, "/", 2) -> 4
+        calculer(8, "/", 0) -> null
+        calculer(8, "%", 2) -> null
+    </p>
+
+    <script>
+        const calculer = (a, op, b) => {
+            switch (op) {
+                case "+":
+                    return a + b;
+                case "-":
+                    return a - b;
+                case "*":
+                    return a * b;
+                case "/":
+                    return b !== 0 ? a / b : null;
+                default:
+                    return null;
+            }
+        };
+
+        console.log(calculer(2, "/", 0));
+    </script>
+</body>
+</html>

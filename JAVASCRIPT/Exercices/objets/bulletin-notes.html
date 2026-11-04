@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin de notes</title>
+</head>
+<body>
+    <p>
+        Bulletin de notes.
+        const eleves = [{ nom: "Awa", note: 14 }, { nom: "Moussa", note: 9 },
+        { nom: "Fatou", note: 17 }, { nom: "Ali", note: 11 }];
+        1. Affichez chaque élève sous la forme « Awa : 14/20 ».
+        2. Avec filter(), affichez la liste des admis (note de 10 ou plus).
+        3. Trouvez l'élève qui a la meilleure note.
+        4. Affichez les élèves classés de la meilleure à la moins bonne note,
+        sans modifier le tableau eleves.
+        Résultat attendu : Admis : Awa, Fatou, Ali.
+        Meilleure note : Fatou (17). Classement : Fatou, Awa, Ali, Moussa.
+    </p>
+    <script>
+        // Correction envoyée par le formateur.
+        const eleves = [
+            { nom: "Awa", note: 14 },
+            { nom: "Moussa", note: 9 },
+            { nom: "Fatou", note: 17 },
+            { nom: "Ali", note: 11 }
+        ];
+
+        // 1. Afficher chaque élève.
+        console.log("Liste élèves");
+        eleves.forEach(eleve => console.log(`${eleve.nom}: ${eleve.note}/20`));
+
+        // 2. Filtrer les admis, puis afficher leurs noms.
+        console.log("\nfiltre: liste des admis");
+        const admis = eleves.filter(eleve => eleve.note >= 10);
+        console.log(admis.map(e => e.nom).join(","));
+
+        // 3. Deux façons de trouver la meilleure note, vues dans la correction.
+        console.log("\nmeilleure note");
+        let max = Number.MIN_SAFE_INTEGER;
+        let nom;
+        console.log(Math.max(...eleves.map(el => el.note)));
+        eleves.forEach(eleve => {
+            if (eleve.note > max) {
+                max = eleve.note;
+                nom = eleve.nom;
+            }
+        });
+        console.log(nom + " => " + max);
+
+        // 4. toSorted() crée un nouveau tableau : eleves conserve son ordre.
+        console.log("\ntri");
+        const tabTrie = eleves.toSorted((a, b) => b.note - a.note);
+        tabTrie.forEach(eleve => console.log(`${eleve.nom}: ${eleve.note}/20`));
+    </script>
+</body>
+</html>

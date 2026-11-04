@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Échanger deux valeurs
+        Avec le même tableau tab, demandez deux indices et échangez les valeurs placées à ces deux indices. Affichez le
+        tableau avant et après l’échange.
+        Si un indice n’existe pas dans le tableau, affichez un message d’erreur.
+        Résultat attendu
+        Indices : 0 et 3
+        Avant : [12, 15, 13, 10, 8, 9, 13, 14]
+        Après : [10, 15, 13, 12, 8, 9, 13, 14]
+    </p>
+
+    <script>
+        const tab = [12, 15, 13, 10, 8, 9, 13, 14];
+
+        console.log("Tableau avant : " + tab.join(","));
+
+        let indice1 = Number(prompt("indice 1"));
+        let indice2 = Number(prompt("indice 2"));
+
+        if (indice1 >= 0 && indice1 < tab.length && indice2 >= 0 && indice2 < tab.length) {
+            /*let tmp = tab[indice1];
+            tab[indice1] = tab[indice2];
+            tab[indice2] = tmp;*/
+
+            [tab[indice1], tab[indice2]] = [tab[indice2], tab[indice1]];
+        }
+
+
+        console.log("Tableau après : " + tab.join(","));
+
+
+    </script>
+</body>
+
+</html>

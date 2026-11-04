@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir les objets</title>
+</head>
+<body>
+    <p>Exemples du cours : un objet contient des propriétés (prénom, âge, ville, langages).
+        Observer Object.entries(), parcourir ses propriétés avec for...in,
+        puis accéder au nom du troisième élève dans un tableau d'objets.</p>
+    <script>
+        let eleve = {
+            prenom: "Pierre",
+            age: 20,
+            ville: "Creil",
+            langages: ["js", "css", "python"]
+        };
+
+        console.log(Object.entries(eleve));
+        for (let cle in eleve) {
+            console.log(eleve[cle]);
+        }
+
+        let tabEleves = [
+            { prenom: "Jean", nom: "Pierre", ville: "Creil" },
+            { prenom: "Claude", nom: "Monet", ville: "Paris" },
+            { prenom: "Albert", nom: "Dupond", ville: "Nogent" }
+        ];
+        console.log(tabEleves[2].nom);
+    </script>
+</body>
+</html>
