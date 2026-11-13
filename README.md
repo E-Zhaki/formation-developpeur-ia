@@ -8,6 +8,7 @@ Cours, exercices et projets réalisés pendant ma formation de développeur en i
 - `BOOTSTRAP/` : cours et exercices Bootstrap.
 - `JAVASCRIPT/` : support de cours et exercices sur les bases de JavaScript.
 - `SQL/` : cours, exercices de modélisation et scripts SQL.
+- `Premier Projet Python/` : notebooks Jupyter (listes, chaînes, dictionnaires, Pandas). Les jeux de données CSV/JSON de Pandas restent en local (trop lourds pour GitHub).
 - `Docs/` : documents administratifs conservés localement et exclus du dépôt Git.
 
 Chaque module contient un dossier `Leçons/` et un dossier `Exercices/`.

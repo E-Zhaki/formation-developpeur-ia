@@ -6,3 +6,9 @@
 Thumbs.db
 Desktop.ini
 ~$*
+._*
+
+# Jupyter : sauvegardes automatiques et jeux de données trop lourds pour GitHub
+.ipynb_checkpoints/
+Premier Projet Python/Notebook Pandas/*/*.csv
+Premier Projet Python/Notebook Pandas/*/*.json
