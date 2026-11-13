@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir les événements</title>
+</head>
+<body>
+    <p>Exemples du cours (diapositives 45 à 48) : réagir à un clic avec onclick puis avec addEventListener,
+        lire l'objet event (event.target, e.key), arrêter la propagation et supprimer un écouteur.
+        Ouvrir la console (F12), cliquer sur les boutons et taper des touches au clavier.</p>
+
+    <button onclick="alert('Clic !')">1. onclick dans le HTML (à éviter)</button>
+    <button id="propriete">2. onclick en JavaScript</button>
+    <button id="valider">3. addEventListener</button>
+    <div id="parent" style="padding: 20px; background: lightgray; margin-top: 10px;">
+        Parent
+        <button id="enfant">4. Enfant (propagation arrêtée)</button>
+    </div>
+    <button id="bonjour">5. Bonjour (écouteur supprimé)</button>
+
+    <script>
+        // Diapositive 45 : réagir avec une propriété en JavaScript
+        const btn = document.querySelector("#propriete");
+        btn.onclick = () => alert("Clic !");
+
+        // Diapositive 47 : la méthode recommandée, addEventListener
+        const valider = document.querySelector("#valider");
+        valider.addEventListener("click", (event) => {
+            console.log("Bouton cliqué");
+            console.log(event.target); // l'élément cliqué
+        });
+
+        document.addEventListener("keydown", (e) => console.log(e.key));
+
+        // Diapositive 48 : propagation
+        const parent = document.querySelector("#parent");
+        const enfant = document.querySelector("#enfant");
+        parent.addEventListener("click", () => console.log("Clic reçu par le parent"));
+        enfant.addEventListener("click", (e) => {
+            e.stopPropagation(); // le parent ne réagit pas
+            console.log("Clic sur l'enfant");
+        });
+
+        // Diapositive 48 : supprimer un écouteur (la fonction doit avoir un nom)
+        const bonjour = document.querySelector("#bonjour");
+        function direBonjour() {
+            alert("Bonjour");
+        }
+        bonjour.addEventListener("click", direBonjour);
+        bonjour.removeEventListener("click", direBonjour); // le bouton 5 ne fait donc plus rien
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'inspiration — Centre Horizon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Explorez notre galerie d'inspiration</h1>
+    </header>
+
+    <main>
+        <!-- Barre d'outils : le lien affiche ou masque les boutons (R2) -->
+        <div class="toolbar">
+            <a href="#" id="toolbar-toggle" aria-expanded="false" aria-controls="toolbar-buttons">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i> Commandes
+            </a>
+
+            <!-- Zone des boutons, cachée au départ grâce à la classe "hidden" -->
+            <div id="toolbar-buttons" class="hidden">
+                <button type="button" id="slider-previous" aria-label="Photo précédente">
+                    <i class="fa-solid fa-backward" aria-hidden="true"></i>
+                </button>
+                <button type="button" id="slider-toggle" aria-label="Mettre en pause">
+                    <i class="fa-solid fa-pause" aria-hidden="true"></i>
+                </button>
+                <button type="button" id="slider-next" aria-label="Photo suivante">
+                    <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </button>
+                <button type="button" id="slider-random" aria-label="Photo au hasard">
+                    <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Une seule image : c'est le JavaScript qui la change (R1, R9) -->
+        <figure id="slider" class="slider">
+            <img id="slider-image" src="images/photo1.jpg" alt="Description de la première photo">
+            <figcaption id="slider-caption">Titre de la photo</figcaption>
+        </figure>
+
+        <!-- Compteur du type « 3 / 6 » -->
+        <p id="slider-counter">1 / 6</p>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
