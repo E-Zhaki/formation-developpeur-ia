@@ -1,0 +1,12 @@
+/* Police Open Sans (Google Fonts), chargée dans index.html */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Cache la zone des boutons au départ ; le JavaScript retire ou remet cette classe (R2) */
+.hidden {
+    display: none;
+}
+
+/* À faire : bandeau de titre, boutons alignés horizontalement, photo inclinée,
+   bords arrondis, légende centrée, focus clavier visible, responsive dès 375 px. */
